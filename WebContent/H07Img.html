@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>H07Img.html</title>
+</head>
+<body>
+	<h2>img 태그</h2>
+	
+	<h3>이미지를 원본크기대로 표시하기</h3>
+	<img src="./images/1.png" alt="스펀지밥" />
+	
+	<h2>이미지 크기설정</h2>
+	<img src="./images/1.png" width="100" alt="스폰지밥" />
+	<img src="./images/2.png" width="100" height="200" alt="징징이" />
+	<img src="./images/2.png" alt="징징이" />
+
+	<h2>이미지에 링크걸기</h2>
+	
+	<a href="http://www.naver.com/" target="_blank">
+		<img src="./images/logo.png" alt="로고" />
+	</a>
+	
+	<h2>외부에 있는 이미지 가져오기</h2>
+	<a href="http://www.ikosmo.co.kr/images/common/logo_center_v2.jpg" target="_blank">
+		<img src="외부이미지 경로삽입하세요." alt="한국직업전문학교" />
+	</a>
+	
+	<!-- 
+	shape속성에 값을 지정할때
+		rectangle => rect
+		circle => circ
+		polygon => poly
+	와 같이 줄여서 사용할 수 있다.
+	 -->
+	<h2>이미지맵 사용하기</h2>
+	<img src="./images/Map01.png" alt="이미지맵 사용하기" usemap="#MyImage"/>
+	<map name="MyImage">
+		<area shape="rectangle" coords="70,127,175,231" href="http://naver.com" alt="" />
+		<area shape="circle" coords="246,179,51" href="http://daum.net" alt="" />
+		<area shape="polygon" coords="372,125,302,240,432,240" href="http://nate.com" alt="" />
+		<area shape="polygon" coords="499,130,478,160,439,180,479,192,497,231,510,188,548,180,514,161" 
+			href="http://google.com" alt="" />
+
+	</map>
+	
+	
+</body>
+</html>
